@@ -11,8 +11,7 @@ def element_at(my_list, idx):
     Returns:
         The element at the specified index, or None if the index is out of range.
     """
-    if idx < 0:
+    if idx < 0 or idx >= len(my_list):
         return None
-    elif idx >= len(my_list):
-        return None
-    return my_list[idx]
+    else:
+        return my_list[idx]
