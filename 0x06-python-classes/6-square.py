@@ -10,7 +10,7 @@ class Square:
         
         Arge:
             size (int): The size of the new Square
-            positio (int, int): The position of the new sqaure.
+            position (int, int): The position of the new sqaure.
         """
         self.size = size
         self.position = position
