@@ -1,27 +1,28 @@
 #!/usr/bin/python3
-
-""" Defines a MagicClass that does exactly the same as bytecode"""
+"""Define a MagicClass matching exactly a bytecode provided by ALX."""
 
 import math
 
+
 class MagicClass:
-    """Representing a circle"""
+    """Represent a circle."""
 
     def __init__(self, radius=0):
-        """ Initiate a new square
-        
-        Arge:
-            size (int): The size of the new Square
-            position (int, int): The position of the new sqaure.
-       """
-        self.__radius = 0
+        """Initialize a MagicClass.
 
-        if type(radius) is not int or type(radius) is not float:
-            raise TypeError('radius must be a number')
+        Arg:
+            radius (float or int): The radius of the new MagicClass.
+        """
+        self.__radius = 0
+        if type(radius) is not int and type(radius) is not float:
+            raise TypeError("radius must be a number")
         self.__radius = radius
 
     def area(self):
-        return self.__radius ** 2 * math.pi
+        """Return the area of the MagicClass."""
+        return (self.__radius ** 2 * math.pi)
 
     def circumference(self):
-        return 2 * math.pi * self.__radius
+        """Return The circumference of the MagicClass."""
+        return (2 * math.pi * self.__radius)
+    
