@@ -49,7 +49,7 @@ This project focuses on practicing SQL queries related to permissions, joins, an
 * **17. Not My Genre:** Lists genres not linked to "Dexter" from `hbtn_0d_tvshows`, ordered by genre name.
 * **18. No Comedy Tonight:** Lists shows without the "comedy" genre from `hbtn_0d_tvshows`, ordered by title.
 
-**Ratings and Aggregations:**
+@bennyonye
 
 * **19. Rotten Tomatoes:** Lists shows from `hbtn_0d_tvshows_rate` by their rating, ordered highest to lowest.
 * **20. Best Genre:** Lists genres from `hbtn_0d_tvshows_rate` by their average rating, ordered highest to lowest.
