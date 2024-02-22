@@ -1,29 +1,29 @@
 # C - Makefiles
 
-This project focused on honing skills in writing Makefiles to efficiently compile and manage C programs.
+This project focused on practicing writing Makefiles efficiently. 
 
-## Tests :heavy_check_mark:
+## Tests
 
 * [tests](./tests): Directory containing test files.
 
-## Helper Files :raised_hands:
+## Helper Files
 
-* [school.c](./school.c): C function that displays a seahorse in text, utilized for Makefile practice purposes throughout the project.
-* [main.c](./main.c): Main C function that executes the function defined in [school.c](./school.c).
+* [school.c](./school.c): C function that displays a seahorse in text, used for Makefile practice.
+* [main.c](./main.c): Main C function executing the function defined in [school.c](./school.c).
 
-## Header File :file_folder:
+## Header File
 
 * [m.h](./m.h): Header file defining the function prototype used in `school.c`.
 
-## Tasks :page_with_curl:
+## Tasks
 
 * **0. make -f 0-Makefile**
-  * [0-Makefile](./0-Makefile): Makefile creating an executable `school` based on [school.c](./school.c) and [main.c](./main.c). Features:
+  * [0-Makefile](./0-Makefile): Makefile creating an executable `school` based on [school.c](./school.c) and [main.c](./main.c). Includes:
     * Rule `all` for building the executable.
 
 * **1. make -f 1-Makefile**
-  * [1-Makefile](./1-Makefile): Makefile creating an executable `school` based on [school.c](./school.c) and [main.c](./main.c). Enhancements over [0-Makefile](./0-Makefile) include:
-    * Variable `CC` defining the compiler to be used.
+  * [1-Makefile](./1-Makefile): Makefile creating an executable `school` based on [school.c](./school.c) and [main.c](./main.c). Features:
+    * Variable `CC` defining the compiler.
     * Variable `SRC` defining the `.c` files to compile.
     * The `all` rule recompiles only updated source files.
 
@@ -34,7 +34,7 @@ This project focused on honing skills in writing Makefiles to efficiently compil
 
 * **3. make -f 3-Makefile**
   * [3-Makefile](./3-Makefile): Makefile creating an executable `school` based on [school.c](./school.c) and [main.c](./main.c). Further extends [2-Makefile](./2-Makefile) with:
-    * Rule `clean` deleting Emacs/Vim temporary files and the executable.
+    * Rule `clean` deleting temporary files and the executable.
     * Rule `oclean` deleting object files.
     * Rule `fclean` deleting all temporary files, the executable, and object files.
     * Rule `re` forcing recompilation of all source files.
@@ -42,7 +42,7 @@ This project focused on honing skills in writing Makefiles to efficiently compil
 
 * **4. A complete Makefile**
   * [4-Makefile](./4-Makefile): Makefile creating an executable `school` based on [school.c](./school.c) and [main.c](./main.c). Extends [3-Makefile](./3-Makefile) with:
-    * Variable `CFLAGS` defining compiler flags `-Wall -Werror -Wextra -pedantic`.
+    * Variable `CFLAGS` defining compiler flags.
 
 * **5. Island Perimeter**
   * [5-island_perimeter.py](./5-island_perimeter.py): Python function returning the perimeter of an island defined in a grid.
@@ -50,7 +50,6 @@ This project focused on honing skills in writing Makefiles to efficiently compil
     * Parameter `grid`: List of lists of integers.
       * `0` represents water.
       * `1` represents land.
-      * Each list element represents a cell square of side length 1.
       * Grid cells are connected horizontally/vertically (not diagonally).
       * The grid is rectangular, with width and height not exceeding 100.
       * The grid is completely surrounded by water, with exactly one island or nothing.
@@ -61,6 +60,6 @@ This project focused on honing skills in writing Makefiles to efficiently compil
     * No definition of the variable `RM`.
     * Omission of the string `$(CFLAGS)`.
     * Compilation prevention if the header `m.h` is missing.
-    * Functionality even in the presence of existing files with names identical to any of the Makefile rules in the current directory.
+    * Functionality even with existing files with names identical to any of the Makefile rules in the current directory.
 
 @bennyonye
