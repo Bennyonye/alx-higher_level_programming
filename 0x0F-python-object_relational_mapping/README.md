@@ -1,4 +1,3 @@
-```
 # Python - Object-relational mapping
 
 In this project, I learned about how object-relational mapping is used for database scripting. I became familiar with using MySQLdb and SQLAlchemy to query, create, edit, and delete tables in MySQL.
@@ -86,9 +85,7 @@ In this project, I learned about how object-relational mapping is used for datab
   * Results are sorted by ascending `cities.id`.
 
 * **15. City relationship**
-  * [relationship_state.py](./relationship_state.py): Python module defining
-
- a class `State` that inherits from SQLAlchemy `Base` and links to the MySQL table `states`.
+  * [relationship_state.py](./relationship_state.py): Python module defining a class `State` that inherits from SQLAlchemy `Base` and links to the MySQL table `states`.
     * Identical to the `State` class defined in [model_state.py](./model_state.py).
     * Includes class attribute `classes` that represents a relationship with the class `City`. If the `State` object is deleted, all linked `City` objects are also deleted. `State` objects are backreferenced to `City` objects as `state`.
   * [relationship_city.py](./relationship_city.py): Python module defining a class `City` that inherits from SQLAlchemy `Base` and links to the MySQL table `cities`.
@@ -108,4 +105,3 @@ In this project, I learned about how object-relational mapping is used for datab
   * Usage: `./102-relationship_cities_states_list.py <mysql username> <mysql password> <database name>`.
   * Uses the `state` relationship to access the `State` objects linked to `City` objects.
   * Results are sorted by ascending `cities.id`.
-```
